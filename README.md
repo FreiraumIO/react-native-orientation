@@ -6,7 +6,7 @@ Listen to device orientation changes in React Native applications and programmat
 ## Installing
 
 ```
-npm install react-native-orientation --save
+npm install git+ssh://git@github.com:FreiraumIO/react-native-orientation.git
 ```
 
 ## Linking Native Dependencies
@@ -85,7 +85,7 @@ Add the following to your project's `AppDelegate.m`:
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
   return [Orientation getOrientation];
 }
-  
+
 
 @end
 ```

@@ -127,7 +127,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
 
     @ReactMethod
     public void unlockAllOrientations() {
-    console.log('All Orientations locked');
+    Log.d("OrientationModule","All Orientations locked");
         final Activity activity = getCurrentActivity();
         if (activity == null) {
             return;

@@ -74,7 +74,6 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
         }
     }
 
-
      @ReactMethod
          public void getSpecificOrientation(Callback callback) {
              android.view.Display display = ((android.view.WindowManager)
@@ -128,6 +127,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Lif
 
     @ReactMethod
     public void unlockAllOrientations() {
+    console.log('All Orientations locked');
         final Activity activity = getCurrentActivity();
         if (activity == null) {
             return;
